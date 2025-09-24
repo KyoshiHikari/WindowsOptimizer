@@ -1,0 +1,300 @@
+# ===========================================
+# Windows Optimizer - .gitignore
+# ===========================================
+# Diese Datei verhindert, dass unwichtige oder sensible Dateien
+# versehentlich auf GitHub gepusht werden.
+
+# ===========================================
+# POWERSHELL SPEZIFISCH
+# ===========================================
+# PowerShell Backup-Dateien
+*.ps1.bak
+*.psm1.bak
+*.psd1.bak
+*.ps1xml.bak
+
+# PowerShell Logs und temporäre Dateien
+*.log
+*.tmp
+*.temp
+
+# PowerShell Module Cache
+*.psm1.cache
+
+# ===========================================
+# SPEZIFISCHE SCRIPT AUSSCHLÜSSE
+# ===========================================
+# Nur WindowsOptimizerGUI.ps1 und SecurityCheck.ps1 sollen gepusht werden
+# Alle anderen .ps1 Scripts ausschließen
+WindowsOptimizer.ps1
+WindowsOptimizer_Fixed.ps1
+PushToGitHub.ps1
+
+# Module-Verzeichnis ausschließen (falls nicht gewünscht)
+Modules/
+
+# Entwicklungsdokumentation (nur lokal relevant)
+GITHUB_PUSH_README.md
+
+# ===========================================
+# SENSIBLE DATEN - NIEMALS COMMITTEN!
+# ===========================================
+# Umgebungsvariablen und Konfigurationen
+*.env
+*.env.local
+*.env.production
+*.env.development
+
+# Konfigurationsdateien mit sensiblen Daten
+config.json
+secrets.json
+credentials.json
+settings.json
+appsettings.json
+appsettings.*.json
+
+# API Keys und Tokens
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cer
+*.p7b
+*.p7c
+
+# Datenbankdateien
+*.db
+*.sqlite
+*.sqlite3
+*.mdb
+*.accdb
+
+# ===========================================
+# LOGS UND TEMPORÄRE DATEIEN
+# ===========================================
+# Log-Verzeichnisse
+logs/
+log/
+*.log
+*.log.*
+
+# Temporäre Verzeichnisse
+temp/
+tmp/
+temporary/
+
+# Windows temporäre Dateien
+*.tmp
+*.temp
+~$*
+
+# ===========================================
+# IDE UND ENTWICKLUNGSUMWELT
+# ===========================================
+# Visual Studio Code
+.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ===========================================
+# BETRIEBSSYSTEM SPEZIFISCH
+# ===========================================
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ===========================================
+# BACKUP UND ARCHIV DATEIEN
+# ===========================================
+# Backup-Dateien
+*.bak
+*.backup
+*.old
+*.orig
+*.save
+*.swp
+*.swo
+*~
+
+# Archiv-Dateien (außer wenn explizit gewünscht)
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+*.bz2
+
+# ===========================================
+# BENUTZERSPEZIFISCHE DATEIEN
+# ===========================================
+# Benutzerkonfigurationen
+user.config
+*.user
+*.suo
+
+# Persönliche Notizen
+notes.txt
+todo.txt
+personal/
+private/
+
+# ===========================================
+# TEST UND ENTWICKLUNG
+# ===========================================
+# Test-Dateien
+test-*.ps1
+*test*.ps1
+*_test.ps1
+*_test.psm1
+tests/
+test/
+
+# Debug-Dateien
+debug.ps1
+debug.txt
+*.debug
+
+# ===========================================
+# DOKUMENTATION UND README
+# ===========================================
+# Temporäre Dokumentation
+draft/
+drafts/
+*.draft
+
+# ===========================================
+# GIT SPEZIFISCH
+# ===========================================
+# Git Hooks (falls lokal modifiziert)
+.git/hooks/*.local
+
+# ===========================================
+# WINDOWS OPTIMIZER SPEZIFISCH
+# ===========================================
+# Optimizer-spezifische temporäre Dateien
+optimizer_temp/
+optimizer_logs/
+*.optimizer.tmp
+
+# System-Diagnose-Dateien
+system_info.txt
+diagnostics.txt
+performance_log.txt
+
+# ===========================================
+# SICHERHEIT
+# ===========================================
+# Zertifikate und Schlüssel
+*.pem
+*.key
+*.crt
+*.cer
+*.p12
+*.pfx
+
+# Passwort-Dateien
+passwords.txt
+secrets.txt
+*.secret
+
+# ===========================================
+# NETZWERK UND VERBINDUNGEN
+# ===========================================
+# Netzwerk-Konfigurationen
+network_config.json
+connection_strings.txt
+
+# ===========================================
+# PERFORMANCE UND MONITORING
+# ===========================================
+# Performance-Logs
+performance/
+monitoring/
+*.perf
+*.monitor
+
+# ===========================================
+# WICHTIGE DATEIEN DIE COMMITTET WERDEN SOLLTEN
+# ===========================================
+# Diese Dateien SOLLTEN auf GitHub sein:
+# - *.ps1 (PowerShell Scripts)
+# - *.psm1 (PowerShell Module)
+# - *.md (Markdown Dokumentation)
+# - LICENSE
+# - README.md
+# - CHANGELOG.md
+# - .gitignore (diese Datei)
+# - Modules/ (Verzeichnis mit Modulen)
