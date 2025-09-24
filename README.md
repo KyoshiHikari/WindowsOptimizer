@@ -1,234 +1,231 @@
 # 🔧 Windows 11 Optimizer
 
-Ein umfassendes PowerShell-Tool zur Diagnose, Reparatur und Optimierung von Windows 11 Systemen.
+A comprehensive PowerShell tool for diagnosing, repairing, and optimizing Windows 11 systems.
 
 ## ✨ Features
 
-### 🔍 Systemdiagnose
-- **Umfassende Systemanalyse**: Hardware, Software, Performance und Sicherheit
-- **Problem-Erkennung**: Automatische Identifikation von Systemproblemen
-- **Performance-Monitoring**: CPU, RAM, Festplatten und Netzwerk
-- **Sicherheitsprüfung**: Windows Defender, Firewall und Updates
+### 🔍 System Diagnostics
+- **Comprehensive System Analysis**: Hardware, software, performance, and security
+- **Problem Detection**: Automatic identification of system issues
+- **Performance Monitoring**: CPU, RAM, disks, and network
+- **Security Check**: Windows Defender, firewall, and updates
 
-### 🔧 Fehlerreparatur
-- **Windows Update Reparatur**: Behebt Update-Probleme und Cache-Fehler
-- **System-Dateien Reparatur**: SFC und DISM Reparatur
-- **Registry-Reparatur**: Behebt Registry-Probleme und Konflikte
-- **Netzwerk-Reparatur**: Repariert Netzwerk-Adapter und Verbindungen
-- **Dienst-Reparatur**: Startet fehlerhafte Dienste neu
-- **Festplatten-Reparatur**: CHKDSK und Defragmentierung
-- **Windows Defender Reparatur**: Aktiviert und repariert Defender
+### 🔧 Error Repair
+- **Windows Update Repair**: Fixes update issues and cache errors
+- **System Files Repair**: SFC and DISM repair
+- **Registry Repair**: Fixes registry problems and conflicts
+- **Network Repair**: Repairs network adapters and connections
+- **Service Repair**: Restarts faulty services
+- **Disk Repair**: CHKDSK and defragmentation
+- **Windows Defender Repair**: Activates and repairs Defender
 
-### ⚡ Performance-Optimierung
-- **Startup-Optimierung**: Deaktiviert unnötige Startup-Programme
-- **Dienst-Optimierung**: Optimiert Windows-Dienste für bessere Performance
-- **Registry-Optimierung**: Optimiert Registry-Einträge für bessere Performance
-- **Speicher-Optimierung**: Optimiert Virtual Memory und RAM-Nutzung
-- **Netzwerk-Optimierung**: Optimiert TCP/IP-Parameter und DNS
-- **Festplatten-Optimierung**: Defragmentierung und SSD-Optimierung
-- **Visual Effects**: Optimiert Windows-Animationen und Effekte
-- **Power Settings**: Optimiert Energieeinstellungen
+### ⚡ Performance Optimization
+- **Startup Optimization**: Disables unnecessary startup programs
+- **Service Optimization**: Optimizes Windows services for better performance
+- **Registry Optimization**: Optimizes registry entries for better performance
+- **Memory Optimization**: Optimizes virtual memory and RAM usage
+- **Network Optimization**: Optimizes TCP/IP parameters and DNS
+- **Disk Optimization**: Defragmentation and SSD optimization
+- **Visual Effects**: Optimizes Windows animations and effects
+- **Power Settings**: Optimizes power settings
 
-### 🛡️ Sicherheitsoptimierung
-- **Windows Defender**: Aktiviert und optimiert Defender
-- **Firewall**: Konfiguriert Windows Firewall für maximale Sicherheit
-- **Benutzerkonten**: Optimiert Benutzerkonten und Berechtigungen
-- **Registry-Sicherheit**: Härtet Registry-Einträge
-- **Netzwerk-Sicherheit**: Deaktiviert unsichere Protokolle
-- **Windows Update**: Optimiert Update-Einstellungen
+### 🛡️ Security Optimization
+- **Windows Defender**: Activates and optimizes Defender
+- **Firewall**: Configures Windows Firewall for maximum security
+- **User Accounts**: Optimizes user accounts and permissions
+- **Registry Security**: Hardens registry entries
+- **Network Security**: Disables insecure protocols
+- **Windows Update**: Optimizes update settings
 
-### 🧹 Systembereinigung
-- **Temp-Dateien**: Bereinigt temporäre Dateien und Caches
-- **Browser-Cache**: Bereinigt Browser-Caches (Chrome, Firefox, Edge)
-- **Windows Update Cache**: Bereinigt Update-Cache und Downloads
-- **Registry-Bereinigung**: Entfernt ungültige Registry-Einträge
-- **System-Dateien**: Bereinigt Windows-Dateien mit DISM
-- **Unnötige Programme**: Deinstalliert unnötige Software
-- **Festplatten-Defragmentierung**: Optimiert Festplatten-Performance
+### 🧹 System Cleanup
+- **Temp Files**: Cleans temporary files and caches
+- **Browser Cache**: Cleans browser caches (Chrome, Firefox, Edge)
+- **Windows Update Cache**: Cleans update cache and downloads
+- **Registry Cleanup**: Removes invalid registry entries
+- **System Files**: Cleans Windows files with DISM
+- **Unnecessary Programs**: Uninstalls unnecessary software
+- **Disk Defragmentation**: Optimizes disk performance
 
-### 📊 Systemberichte
-- **HTML-Berichte**: Detaillierte HTML-Systemberichte
-- **Performance-Analyse**: Umfassende Performance-Metriken
-- **Sicherheits-Status**: Detaillierte Sicherheitsanalyse
-- **Empfehlungen**: Personalisierte Optimierungsempfehlungen
+### 📊 System Reports
+- **HTML Reports**: Detailed HTML system reports
+- **Performance Analysis**: Comprehensive performance metrics
+- **Security Status**: Detailed security analysis
+- **Recommendations**: Personalized optimization recommendations
 
 ## 🚀 Installation
 
-1. **Repository klonen oder herunterladen**
+1. **Clone or download the repository**
    ```powershell
    git clone https://github.com/your-repo/WindowsOptimizer.git
    cd WindowsOptimizer
    ```
 
-2. **PowerShell-Execution-Policy setzen**
+2. **Set PowerShell execution policy**
    ```powershell
    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
    ```
 
-3. **Als Administrator ausführen**
+3. **Run as Administrator**
    ```powershell
-   .\WindowsOptimizer.ps1
+   .\WindowsOptimizerGUI.ps1
    ```
 
-## 📖 Verwendung
+## 📖 Usage
 
-### Interaktiver Modus
+### Interactive Mode
 ```powershell
-.\WindowsOptimizer.ps1
+.\WindowsOptimizerGUI.ps1
 ```
 
-### Automatische Reparatur
+### Automatic Repair
 ```powershell
-.\WindowsOptimizer.ps1 -AutoFix
+.\WindowsOptimizerGUI.ps1 -AutoFix
 ```
 
-### Systemdiagnose
+### System Diagnostics
 ```powershell
-.\WindowsOptimizer.ps1 -Diagnose
+.\WindowsOptimizerGUI.ps1 -Diagnose
 ```
 
-### Performance-Optimierung
+### Performance Optimization
 ```powershell
-.\WindowsOptimizer.ps1 -Optimize
+.\WindowsOptimizerGUI.ps1 -Optimize
 ```
 
-### Stiller Modus
+### Silent Mode
 ```powershell
-.\WindowsOptimizer.ps1 -Silent
+.\WindowsOptimizerGUI.ps1 -Silent
 ```
 
-## 🎯 Hauptmenü
+## 🎯 Main Menu
 
-Das Tool bietet ein benutzerfreundliches Hauptmenü mit folgenden Optionen:
+The tool provides a user-friendly main menu with the following options:
 
-1. **🔍 Systemdiagnose durchführen** - Umfassende Systemanalyse
-2. **🔧 Fehler automatisch reparieren** - Automatische Problembehebung
-3. **⚡ Performance optimieren** - Systemleistung verbessern
-4. **🛡️ Sicherheitseinstellungen optimieren** - Sicherheit erhöhen
-5. **🧹 System bereinigen** - Speicherplatz freigeben
-6. **📊 Systembericht erstellen** - Detaillierte Berichte generieren
-7. **⚙️ Erweiterte Optionen** - Zusätzliche Tools und Funktionen
+1. **🔍 Perform System Diagnostics** - Comprehensive system analysis
+2. **🔧 Automatically Repair Errors** - Automatic problem solving
+3. **⚡ Optimize Performance** - Improve system performance
+4. **🛡️ Optimize Security Settings** - Increase security
+5. **🧹 Clean System** - Free up disk space
+6. **📊 Create System Report** - Generate detailed reports
+7. **⚙️ Advanced Options** - Additional tools and functions
 
-## 🔧 Erweiterte Optionen
+## 🔧 Advanced Options
 
-- **🔄 Windows Update reparieren** - Update-Probleme beheben
-- **💾 Registry bereinigen** - Registry optimieren
-- **🌐 Netzwerk-Adapter zurücksetzen** - Netzwerk-Probleme beheben
-- **🔧 Windows-Features verwalten** - Features aktivieren/deaktivieren
-- **📱 Treiber aktualisieren** - Treiber-Updates durchführen
+- **🔄 Repair Windows Update** - Fix update issues
+- **💾 Clean Registry** - Optimize registry
+- **🌐 Reset Network Adapters** - Fix network problems
+- **🔧 Manage Windows Features** - Enable/disable features
+- **📱 Update Drivers** - Perform driver updates
 
-## 📁 Projektstruktur
+## 📁 Project Structure
 
 ```
 WindowsOptimizer/
-├── WindowsOptimizer.ps1          # Hauptmodul
-├── Modules/
-│   ├── SystemDiagnostics.ps1    # Systemdiagnose
-│   ├── ErrorRepair.ps1          # Fehlerreparatur
-│   ├── PerformanceOptimizer.ps1 # Performance-Optimierung
-│   ├── SecurityOptimizer.ps1    # Sicherheitsoptimierung
-│   ├── SystemCleaner.ps1        # Systembereinigung
-│   └── SystemReporter.ps1       # Systemberichte
-└── README.md                     # Dokumentation
+├── WindowsOptimizerGUI.ps1      # Main GUI module
+├── SecurityCheck.ps1            # Security check tool
+├── .gitignore                   # Git ignore file
+├── CHANGELOG.md                 # Change log
+├── LICENSE                      # License file
+└── README.md                    # Documentation
 ```
 
-## ⚠️ Wichtige Hinweise
+## ⚠️ Important Notes
 
-### Systemanforderungen
-- **Windows 11** (alle Versionen)
+### System Requirements
+- **Windows 11** (all versions)
 - **PowerShell 5.1+**
-- **Administrator-Rechte** erforderlich
-- **Mindestens 4 GB RAM** empfohlen
+- **Administrator rights** required
+- **At least 4 GB RAM** recommended
 
-### Sicherheit
-- **Backup erstellen**: Vor der Verwendung ein System-Backup erstellen
-- **Administrator-Rechte**: Das Tool benötigt Administrator-Rechte
-- **Virenschutz**: Temporär deaktivieren falls nötig
-- **Registry-Backup**: Automatische Registry-Backups werden erstellt
+### Security
+- **Create Backup**: Create a system backup before use
+- **Administrator Rights**: The tool requires administrator rights
+- **Antivirus**: Temporarily disable if necessary
+- **Registry Backup**: Automatic registry backups are created
 
-### Kompatibilität
-- **Windows 11**: Vollständig kompatibel
-- **Windows 10**: Teilweise kompatibel (nicht getestet)
-- **PowerShell Core**: Nicht kompatibel (verwendet Windows-spezifische Module)
+### Compatibility
+- **Windows 11**: Fully compatible
+- **Windows 10**: Partially compatible (not tested)
+- **PowerShell Core**: Not compatible (uses Windows-specific modules)
 
-## 🐛 Fehlerbehebung
+## 🐛 Troubleshooting
 
-### Häufige Probleme
+### Common Issues
 
-1. **"Execution Policy" Fehler**
+1. **"Execution Policy" Error**
    ```powershell
    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
    ```
 
-2. **"Administrator-Rechte" Fehler**
-   - PowerShell als Administrator ausführen
+2. **"Administrator Rights" Error**
+   - Run PowerShell as Administrator
 
-3. **"Module nicht gefunden" Fehler**
-   - Alle Module-Dateien im `Modules/` Ordner prüfen
+3. **"Module not found" Error**
+   - Check all module files in the project directory
 
-4. **"Registry-Zugriff verweigert" Fehler**
-   - Als Administrator ausführen
-   - Virenschutz temporär deaktivieren
+4. **"Registry access denied" Error**
+   - Run as Administrator
+   - Temporarily disable antivirus
 
-### Log-Dateien
-- **Log-Pfad**: `%TEMP%\WindowsOptimizer.log`
-- **HTML-Berichte**: `%TEMP%\WindowsOptimizer_SystemReport_*.html`
+### Log Files
+- **Log Path**: `%TEMP%\WindowsOptimizer.log`
+- **HTML Reports**: `%TEMP%\WindowsOptimizer_SystemReport_*.html`
 
-## 🤝 Beitragen
+## 🤝 Contributing
 
-Wir freuen uns über Beiträge! Bitte:
+We welcome contributions! Please:
 
-1. Fork das Repository
-2. Erstelle einen Feature-Branch
-3. Committe deine Änderungen
-4. Push zum Branch
-5. Erstelle einen Pull Request
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a pull request
 
-## 📄 Lizenz
+## 📄 License
 
-Dieses Projekt steht unter der MIT-Lizenz. Siehe `LICENSE` für Details.
+This project is licensed under the MIT License. See `LICENSE` for details.
 
-## 👥 Autoren
+## 👥 Authors
 
-- **Windows Optimizer Team** - Hauptentwicklung
-- **PowerShell Community** - Beiträge und Feedback
+- **Windows Optimizer Team** - Main development
+- **PowerShell Community** - Contributions and feedback
 
-## 🙏 Danksagungen
+## 🙏 Acknowledgments
 
-- **Microsoft PowerShell Team** - Für das großartige PowerShell-Framework
-- **Windows Community** - Für Feedback und Verbesserungsvorschläge
-- **Open Source Community** - Für Inspiration und Best Practices
+- **Microsoft PowerShell Team** - For the excellent PowerShell framework
+- **Windows Community** - For feedback and improvement suggestions
+- **Open Source Community** - For inspiration and best practices
 
 ## 📞 Support
 
-Bei Fragen oder Problemen:
+For questions or issues:
 
-1. **GitHub Issues** - Für Bug-Reports und Feature-Requests
-2. **Dokumentation** - Ausführliche Anleitung in diesem README
-3. **Community** - PowerShell und Windows Communities
+1. **GitHub Issues** - For bug reports and feature requests
+2. **Documentation** - Detailed guide in this README
+3. **Community** - PowerShell and Windows communities
 
 ## 🔄 Changelog
 
 ### Version 1.0.0
-- ✅ Erstes Release
-- ✅ Vollständige Systemdiagnose
-- ✅ Automatische Fehlerreparatur
-- ✅ Performance-Optimierung
-- ✅ Sicherheitsoptimierung
-- ✅ Systembereinigung
-- ✅ HTML-Systemberichte
-- ✅ Benutzerfreundliche Oberfläche
+- ✅ First release
+- ✅ Complete system diagnostics
+- ✅ Automatic error repair
+- ✅ Performance optimization
+- ✅ Security optimization
+- ✅ System cleanup
+- ✅ HTML system reports
+- ✅ User-friendly interface
 
 ## 🎯 Roadmap
 
-### Geplante Features
-- **🔄 Automatische Updates** - Tool-Updates automatisch
-- **📱 Mobile App** - Companion-App für Smartphones
-- **☁️ Cloud-Backup** - System-Backups in die Cloud
-- **🤖 KI-Optimierung** - Machine Learning für bessere Optimierungen
-- **🌐 Web-Interface** - Browser-basierte Oberfläche
-- **📊 Dashboard** - Echtzeit-System-Monitoring
+### Planned Features
+- **🔄 Automatic Updates** - Automatic tool updates
+- **📱 Mobile App** - Companion app for smartphones
+- **☁️ Cloud Backup** - System backups to the cloud
+- **🤖 AI Optimization** - Machine learning for better optimizations
+- **🌐 Web Interface** - Browser-based interface
+- **📊 Dashboard** - Real-time system monitoring
 
 ---
 
-**🔧 Windows Optimizer - Ihr zuverlässiger Begleiter für ein optimales Windows 11 System!**
+**🔧 Windows Optimizer - Your reliable companion for an optimal Windows 11 system!**
